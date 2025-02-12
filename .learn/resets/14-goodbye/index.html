@@ -27,8 +27,6 @@
 				display: flex;
 			}
 			.postcard-header img {
-				position: absolute;
-				right: 550px;
 				width: 50px;
 				height: 50px;
 			}
@@ -37,14 +35,14 @@
 				margin: 0;
 			}
 			.postcard p {
-				font-size: 14px;
+				font-size: 16px;
 			}
 			.form {
 				display: flex;
 				flex-direction: column;
 			}
 			.form input {
-				margin: 5px 0;
+				margin: 5px;
 				padding: 5px;
 				border: none;
 				border-bottom: 1px solid gray;
@@ -56,38 +54,42 @@
 				color: white;
 				padding: 8px;
 				border: none;
+				margin-top: 10px;
+				cursor: pointer;
 			}
-			.postcard-footer {
-				text-align: center;
+			.logo {
+				float: right;
+				width: 50px;
 			}
 		</style>
 	</head>
 	<body>
 		<div class="postcard">
 			<div class="postcard-header">
-				<h1>My Postcard</h1>
 				<img
 					src="https://raw.githubusercontent.com/breatheco-de/exercise-postcard/e63a7916530cc850bd92aa1c2e19191837fb5c80/.learn/assets/4geeks.png"
 					alt="Logo"
+					class="Logo"
 				/>
+				<h1>My Postcard</h1>
 			</div>
 			<div class="postcard-body">
 				<div class="body-left">
-					<p></p>
-					<p>Look how awesome! This is a postcard that I created using HTML5 and CSS3 during my 4Geeks Academy Course!</p>
-					<p>This is so cool, can't wait to start doing more stuff!</p>
+					<left>
+						<p>Look how awesome! This is a postcard that I created using HTML5 and CSS3 during my 4Geeks Academy Course!</p>
+						<p>This is so cool, can't wait to start doing more stuff!</p>
+					</left>
 				</div>
 				<div class="body-right">
-					<form class="form">
+					<div class="form">
 						<input type="text" placeholder="Some Name" />
 						<input type="email" placeholder="Some Email" />
 						<input type="text" placeholder="Some comment" />
-					</form>
+					</div>
 				</div>
 			</div>
-			<div class="postcard-footer">
-				<button class="send-button">Send My Postcard</button>
-			</div>
+			<div class="postcard-footer"></div>
+			<button>Send My Postcard</button>
 		</div>
 	</body>
 </html>

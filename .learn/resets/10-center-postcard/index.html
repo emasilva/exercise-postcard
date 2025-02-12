@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+        <link rel="stylesheet" href="styles.css">
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>My Postcard</title>
+		<style>
+			body {
+				font-family: "Comic Sans MS", cursive, sans-serif;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				background-color: #f8f8f8;
+			}
+			.postcard {
+				width: 400px;
+				background: white;
+				padding: 20px;
+				border: 4px solid black;
+				box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+			}
+			.postcard h2 {
+				margin: 0;
+			}
+			.postcard p {
+				font-size: 16px;
+			}
+			.form {
+				display: flex;
+				flex-direction: column;
+			}
+			.form input {
+				margin: 5px 0;
+				padding: 5px;
+				border: none;
+				border-bottom: 1px solid gray;
+				font-size: 14px;
+				outline: none;
+			}
+			.send-button {
+				background: gray;
+				color: white;
+				padding: 8px;
+				border: none;
+				margin-top: 10px;
+				cursor: pointer;
+			}
+			.logo {
+				float: right;
+				width: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="postcard">
+			<h2>My Postcard</h2>
+			<img
+				src=" https://storage.googleapis.com/breathecode-asset-images/5318bde604cf5c915f94897a71b49ab2523101322ea21cb046db1e67c24fa3be.png"
+				alt="Logo"
+				class="logo"
+			/>
+			<p>Look how awesome! This is a postcard that I created using HTML5 and CSS3 during my 4Geeks Academy Course!</p>
+			<p>This is so cool, can't wait to start doing more stuff!</p>
+			<div class="form">
+				<input type="text" placeholder="Some Name" />
+				<input type="email" placeholder="Some Email" />
+				<input type="text" placeholder="Some comment" />
+				<button class="send-button">Send My Postcard</button>
+			</div>
+		</div>
+	</body>
+</html>
